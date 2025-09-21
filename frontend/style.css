@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+h1 { text-align: center; color: #333; }
+
+.nova-tarefa { display: flex; margin-bottom: 20px; }
+#inputNovaTarefa { flex-grow: 1; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+#btnAdicionar { padding: 8px 12px; border: none; background-color: #28a745; color: white; border-radius: 4px; cursor: pointer; margin-left: 10px; }
+
+#listaDeTarefas { list-style-type: none; padding: 0; }
+.tarefa-item { display: flex; align-items: center; padding: 10px; border-bottom: 1px solid #eee; }
+.tarefa-item.concluida .descricao { text-decoration: line-through; color: #888; }
+.tarefa-item .descricao { flex-grow: 1; cursor: pointer; }
+.tarefa-item button { border: none; background: #dc3545; color: white; padding: 5px 10px; border-radius: 4px; cursor: pointer; }

@@ -1,0 +1,36 @@
+### 1. Obter todas as tarefas (inicialmente, estará vazio)
+GET http://127.0.0.1:5000/tarefas
+
+### 2. Adicionar uma nova tarefa
+POST http://127.0.0.1:5000/tarefas
+Content-Type: application/json
+
+{
+    "descricao": "Aprender a criar uma API com Flask"
+}
+
+### 3. Adicionar outra tarefa
+POST http://127.0.0.1:5000/tarefas
+Content-Type: application/json
+
+{
+    "descricao": "Subir projeto para o GitHub"
+}
+
+### 4. Obter todas as tarefas novamente (agora com as duas novas)
+GET http://127.0.0.1:5000/tarefas
+
+### 5. Marcar a primeira tarefa como concluída (substitua o '1' se o ID for diferente)
+PUT http://127.0.0.1:5000/tarefas/1
+Content-Type: application/json
+
+{
+    "concluida": true
+}
+
+### 6. Deletar a segunda tarefa (substitua o '2' se o ID for diferente)
+DELETE http://127.0.0.1:5000/tarefas/2
+
+
+### 7. Obter todas as tarefas no final para ver o resultado
+GET http://127.0.0.1:5000/tarefas

@@ -1,0 +1,11 @@
+# Ambiente Virtual
+venv/
+
+# Banco de dados SQLite e pasta de instância
+*.db
+*.sqlite3
+instance/
+
+# Arquivos temporários do Python
+__pycache__/
+*.pyc
