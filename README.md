@@ -38,9 +38,10 @@ cd nome-da-pasta-do-projeto
 # Para Windows:
 python -m venv venv
 .\venv\Scripts\activate
+
 # Para macOS/Linux:
-# python3 -m venv venv
-# source venv/bin/activate
+python3 -m venv venv
+source venv/bin/activate
 
 # 3. Instale as dependências necessárias a partir do arquivo requirements.txt
 pip install -r requirements.txt
